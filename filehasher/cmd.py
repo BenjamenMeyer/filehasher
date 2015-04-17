@@ -21,7 +21,6 @@ def main():
 	if arguments.check:
 		print('Checking for files...')
 		for path, directory, files in os.walk(arguments.path):
-			print('	Checking directory: {0}'.format(path))
 			for file_item in files:
 				full_path = os.path.join(path, file_item)
 
